@@ -1,0 +1,13 @@
+<!-- 
+<label for="text">Your response for today class</label><br />
+<input [(ngModel)]="Parent_redering" type="text" />
+<button (click)="Btn()">Submit</button>
+<h1>{{ Text }}</h1>
+-->
+<!-- app.component.html -->
+
+<label for="text">Your response for today class</label><br />
+<input #textInput type="text" />
+<button (click)="calculateLength(textInput.value)">Submit</button>
+<h1>{{ Text }}</h1>
+<router-outlet></router-outlet>
